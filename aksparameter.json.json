@@ -1,0 +1,51 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "resourceName": {
+            "value": "akstest001"
+        },
+        "location": {
+            "value": "eastus"
+        },
+        "dnsPrefix": {
+            "value": "akstest001-dns"
+        },
+        "kubernetesVersion": {
+            "value": "1.20.7"
+        },
+        "networkPlugin": {
+            "value": "kubenet"
+        },
+        "enableRBAC": {
+            "value": true
+        },
+        "enablePrivateCluster": {
+            "value": false
+        },
+        "enableHttpApplicationRouting": {
+            "value": false
+        },
+        "enableAzurePolicy": {
+            "value": true
+        },
+        "vmssNodePool": {
+            "value": true
+        },
+        "workspaceName": {
+            "value": "DefaultWorkspace-a5d1f928-4b9f-4764-910a-06faa85fdcef-EUS"
+        },
+        "omsWorkspaceId": {
+            "value": "/subscriptions/a5d1f928-4b9f-4764-910a-06faa85fdcef/resourceGroups/DefaultResourceGroup-EUS/providers/Microsoft.OperationalInsights/workspaces/DefaultWorkspace-a5d1f928-4b9f-4764-910a-06faa85fdcef-EUS"
+        },
+        "workspaceRegion": {
+            "value": "eastus"
+        },
+        "acrName": {
+            "value": "akstest00112"
+        },
+        "acrResourceGroup": {
+            "value": "AKStest01"
+        }
+    }
+}
